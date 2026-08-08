@@ -1,5 +1,3 @@
-# 12. README — FOR GITHUB
-
 ## 📊 Student Performance EDA — Python
 
 ### About This Project
