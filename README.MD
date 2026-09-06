@@ -45,6 +45,47 @@ A collection of end-to-end Data Analytics and Exploratory Data Analysis projects
 
 ## 3. Step-by-Step Data Analysis Workflow
 
+### Analytical Pipeline Flow
+
+```
+[ Raw Dataset ]
+       │
+       ▼
+[ 1. Environment & Display Setup ] ───────── (pd.set_option, whitegrid theme, figure dimensions)
+       │
+       ▼
+[ 2. Safe Data Loading & Path Handling ] ─── (os.path.exists checks, os.listdir verification)
+       │
+       ▼
+[ 3. Column Header Standardization ] ─────── (lowercase, strip whitespace, snake_case conversion)
+       │
+       ▼
+[ 4. Data Quality & Deduplication ] ──────── (remove duplicate rows, fill missing text)
+       │
+       ▼
+[ 5. Datetime Parsing & Normalization ] ──── (pd.to_datetime, .dt.normalize, extract hour & weekday)
+       │
+       ▼
+[ 6. Outlier Capping (99th Percentile) ] ─── (np.percentile, .clip(upper=limit) without dropping rows)
+       │
+       ▼
+[ 7. Feature Engineering ] ───────────────── (pd.cut speed bands, pd.qcut quartiles, tag counting)
+       │
+       ▼
+[ 8. Univariate & Bivariate EDA ] ────────── (histograms with KDE, countplots, category boxplots)
+       │
+       ▼
+[ 9. Multivariate Analysis ] ─────────────── (correlation matrix, 2D pivot heatmaps, pairplots)
+       │
+       ▼
+[ 10. Business Insights & Recommendations ] ─ (data-backed takeaways, upload strategy, engagement advice)
+```
+
+**Quick Pipeline Summary:**  
+`Raw Data` ➔ `Setup & Path Checks` ➔ `Cleaning & Deduplication` ➔ `Datetime Parsing` ➔ `99th % Outlier Capping` ➔ `Feature Engineering` ➔ `Univariate EDA` ➔ `Bivariate EDA` ➔ `Multivariate Analysis` ➔ `Actionable Takeaways`
+
+---
+
 Here is the exact step-by-step process followed across these projects, explaining what was done and why each step is necessary in real-world data analysis:
 
 ### Step 1: Notebook & Display Setup
