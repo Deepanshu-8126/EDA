@@ -1,4 +1,4 @@
-# Exploratory Data Analysis (EDA) Projects
+# Exploratory Data Analysis (EDA) Projects 
 
 A collection of end-to-end Data Analytics and Exploratory Data Analysis projects using Python, Pandas, Matplotlib, and Seaborn. This repository covers real-world datasets across three domains: Social Media Virality, Student Academic Performance, and Restaurant Dining Analytics. It shows complete data cleaning, outlier capping, feature engineering, and visual analysis.
 
